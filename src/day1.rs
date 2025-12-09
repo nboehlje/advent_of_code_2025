@@ -13,7 +13,6 @@ pub fn run() {
     println!("Reading file: {file_path}");
     let password = get_password_part_2(file_path);
     println!("Part 2 ANS: [{password}]");
-    println!("================= [END DAY 1] ===================");
 }
 
 fn get_password_part_1(file_name: &str) -> u32 {
