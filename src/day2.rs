@@ -89,8 +89,10 @@ fn sum_invalid_ids_within_range_part2(lower: u64, upper: u64) -> u64 {
 
             let mut iter = id_as_str.as_bytes().chunks_exact(n);
             let first_chunk = match iter.next() {
-                Some(chunk) => chunk, 
-                None => { continue; } 
+                Some(chunk) => chunk,
+                None => {
+                    continue;
+                }
             };
 
             if iter.all(|chunk| chunk == first_chunk) {
